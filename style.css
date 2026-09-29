@@ -1,0 +1,26 @@
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Hero Background */
+#about {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/hero-bg.jpg') no-repeat center center/cover;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Card Image Sizing */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Gallery hover effect */
+#gallery img {
+  transition: transform 0.3s ease;
+}
+#gallery img:hover {
+  transform: scale(1.03);
+}
