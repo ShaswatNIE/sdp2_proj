@@ -1,26 +1,172 @@
-/* Smooth Scrolling */
-html {
-  scroll-behavior: smooth;
+:root {
+  --primary-amber: #d97706;
+  --heading-font: 'Playfair Display', Georgia, serif;
+  --body-font: 'Plus Jakarta Sans', sans-serif;
 }
 
-/* Custom Hero Background */
-#about {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/hero-bg.jpg') no-repeat center center/cover;
-  min-height: 70vh;
+body {
+  font-family: var(--body-font);
+  color: #2b2b2b;
+  background-color: #faf8f5;
+}
+
+/* Clean Light Navbar */
+.navbar-custom {
+  background-color: #f7f4ed;
+  border-bottom: 1px solid #e2dacd;
+  padding: 12px 0;
+}
+
+.navbar-custom .navbar-brand {
+  font-family: var(--heading-font);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.navbar-custom .nav-link {
+  color: #333333;
+  font-weight: 500;
+  padding: 6px 16px !important;
+  transition: color 0.2s;
+}
+
+.navbar-custom .nav-link:hover {
+  color: var(--primary-amber);
+}
+
+/* Bright Hampi Hero Section */
+.hero-section {
+  background-image: url('https://karnatakatourism.org/wp-content/uploads/2020/06/Stone-Chariot-Hampi-heritage-land.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 520px;
+  padding: 60px 0 80px 0;
+  position: relative;
+}
+
+.hero-title {
+  font-family: var(--heading-font);
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #1a1008;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.hero-subtitle {
+  font-family: var(--heading-font);
+  font-size: 1.25rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: #3a2818;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+/* Translucent Card for Text Legibility */
+.hero-content-card {
+  background: rgba(255, 253, 248, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  padding: 28px 32px;
+  max-width: 650px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.bullet-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.bullet-list li {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #22160d;
+  margin-bottom: 8px;
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
-/* Card Image Sizing */
-.card-img-top {
-  height: 200px;
+.bullet-list li span.arrow {
+  color: #8c4a00;
+  font-weight: 800;
+}
+
+/* Floating Search Bar */
+.hero-search-container {
+  position: absolute;
+  bottom: -26px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 550px;
+  z-index: 10;
+}
+
+.hero-search-input {
+  border-radius: 50px;
+  padding: 14px 24px 14px 48px;
+  border: 1px solid #dcd3c5;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  font-size: 1rem;
+  background: #ffffff;
+}
+
+.search-icon-inside {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+/* Section Cards & Styling */
+.section-title {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  color: #1c1917;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eae5db;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+.card-img-custom {
+  height: 210px;
   object-fit: cover;
 }
 
-/* Gallery hover effect */
-#gallery img {
-  transition: transform 0.3s ease;
+.gallery-img {
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: opacity 0.3s;
 }
-#gallery img:hover {
-  transform: scale(1.03);
+
+.gallery-img:hover {
+  opacity: 0.9;
+}
+
+footer {
+  background-color: #1c1917;
+  color: #d6d3d1;
 }

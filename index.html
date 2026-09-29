@@ -7,176 +7,15 @@
   
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <style>
-    :root {
-      --primary-amber: #d97706;
-      --heading-font: 'Playfair Display', Georgia, serif;
-      --body-font: 'Plus Jakarta Sans', sans-serif;
-    }
-
-    body {
-      font-family: var(--body-font);
-      color: #2b2b2b;
-      background-color: #faf8f5;
-    }
-
-    /* Clean Light Navbar */
-    .navbar-custom {
-      background-color: #f7f4ed;
-      border-bottom: 1px solid #e2dacd;
-      padding: 12px 0;
-    }
-    .navbar-custom .navbar-brand {
-      font-family: var(--heading-font);
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: #1a1a1a;
-    }
-    .navbar-custom .nav-link {
-      color: #333333;
-      font-weight: 500;
-      padding: 6px 16px !important;
-      transition: color 0.2s;
-    }
-    .navbar-custom .nav-link:hover {
-      color: var(--primary-amber);
-    }
-
-    /* Bright Hampi Hero Section (No dark shade) */
-    .hero-section {
-      background-image: url('https://karnatakatourism.org/wp-content/uploads/2020/06/Stone-Chariot-Hampi-heritage-land.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      min-height: 520px;
-      padding: 60px 0 80px 0;
-      position: relative;
-    }
-
-    .hero-title {
-      font-family: var(--heading-font);
-      font-size: 3.2rem;
-      font-weight: 800;
-      letter-spacing: 2px;
-      color: #1a1008;
-      text-transform: uppercase;
-      margin-bottom: 4px;
-    }
-
-    .hero-subtitle {
-      font-family: var(--heading-font);
-      font-size: 1.25rem;
-      letter-spacing: 3px;
-      font-weight: 700;
-      color: #3a2818;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-    }
-
-    /* Translucent Card for Text Legibility over Bright Image */
-    .hero-content-card {
-      background: rgba(255, 253, 248, 0.65);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      border: 1px solid rgba(255, 255, 255, 0.8);
-      border-radius: 16px;
-      padding: 28px 32px;
-      max-width: 650px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    }
-
-    .bullet-list {
-      list-style: none;
-      padding-left: 0;
-      margin-bottom: 0;
-    }
-    .bullet-list li {
-      font-size: 1.05rem;
-      font-weight: 600;
-      color: #22160d;
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .bullet-list li span.arrow {
-      color: #8c4a00;
-      font-weight: 800;
-    }
-
-    /* Floating Search Bar */
-    .hero-search-container {
-      position: absolute;
-      bottom: -26px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 90%;
-      max-width: 550px;
-      z-index: 10;
-    }
-    .hero-search-input {
-      border-radius: 50px;
-      padding: 14px 24px 14px 48px;
-      border: 1px solid #dcd3c5;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-      font-size: 1rem;
-      background: #ffffff;
-    }
-    .search-icon-inside {
-      position: absolute;
-      left: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: #888;
-    }
-
-    /* Section Cards & Styling */
-    .section-title {
-      font-family: var(--heading-font);
-      font-weight: 700;
-      color: #1c1917;
-      margin-bottom: 30px;
-      position: relative;
-    }
-
-    .card-hover {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border: 1px solid #eae5db;
-      border-radius: 12px;
-      overflow: hidden;
-      background: #ffffff;
-    }
-    .card-hover:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 25px rgba(0,0,0,0.08);
-    }
-
-    .card-img-custom {
-      height: 210px;
-      object-fit: cover;
-    }
-
-    .gallery-img {
-      height: 220px;
-      object-fit: cover;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: opacity 0.3s;
-    }
-    .gallery-img:hover {
-      opacity: 0.9;
-    }
-
-    footer {
-      background-color: #1c1917;
-      color: #d6d3d1;
-    }
-  </style>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -247,6 +86,7 @@
       </div>
 
       <div class="row g-4" id="touristGrid">
+
         <div class="col-md-4 searchable-item" data-category="city">
           <div class="card card-hover h-100">
             <img src="https://images.unsplash.com/photo-1596176530529-78163a4f7af2?q=80&w=800&auto=format&fit=crop" class="card-img-top card-img-custom" alt="Bengaluru">
@@ -282,6 +122,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -290,13 +131,16 @@
   <section id="historical" class="py-5 style-bg" style="background-color: #f3efe6;">
     <div class="container">
       <h2 class="section-title text-center">Historical Places</h2>
+
       <div class="row g-4">
+
         <div class="col-md-6 searchable-item">
           <div class="card card-hover h-100">
             <div class="row g-0 h-100 align-items-center">
               <div class="col-md-5 h-100">
                 <img src="https://images.unsplash.com/photo-1620766182966-c6eb5ed2b788?q=80&w=600&auto=format&fit=crop" class="img-fluid rounded-start h-100 w-100" style="object-fit:cover;" alt="Hampi">
               </div>
+
               <div class="col-md-7">
                 <div class="card-body">
                   <span class="badge bg-warning text-dark mb-2">UNESCO Site</span>
@@ -311,9 +155,11 @@
         <div class="col-md-6 searchable-item">
           <div class="card card-hover h-100">
             <div class="row g-0 h-100 align-items-center">
+
               <div class="col-md-5 h-100">
                 <img src="https://media.tripinvites.com/places/mysore/mysore-palace/mysore-palace-in-lights-featured.jpg" class="img-fluid rounded-start h-100 w-100" style="object-fit:cover;" alt="Mysuru Palace">
               </div>
+
               <div class="col-md-7">
                 <div class="card-body">
                   <span class="badge bg-warning text-dark mb-2">Heritage Landmark</span>
@@ -321,9 +167,11 @@
                   <p class="card-text text-muted">The magnificent seat of the Wadiyar dynasty, grand illuminated palace during Dasara festival.</p>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -331,8 +179,11 @@
   <!-- 5. WATERFALLS AND HILL STATIONS -->
   <section id="nature" class="py-5">
     <div class="container">
+
       <h2 class="section-title text-center">Waterfalls & Hill Stations</h2>
+
       <div class="row g-4">
+
         <div class="col-md-4 searchable-item">
           <div class="card card-hover h-100 text-center p-3">
             <img src="https://images.unsplash.com/photo-1546587348-d12660c30c50?q=80&w=600&auto=format&fit=crop" class="card-img-top card-img-custom rounded" alt="Jog Falls">
@@ -362,6 +213,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -369,8 +221,11 @@
   <!-- 6. FAMOUS FOODS -->
   <section id="food" class="py-5" style="background-color: #f3efe6;">
     <div class="container">
+
       <h2 class="section-title text-center">Famous Foods</h2>
+
       <div class="row g-4">
+
         <div class="col-md-3 col-6 searchable-item">
           <div class="card card-hover h-100 text-center p-3">
             <i class="fa-solid fa-utensils fs-2 text-warning mb-2"></i>
@@ -406,6 +261,7 @@
             <p class="small text-muted mb-0">Melt-in-mouth sweet made with besan and ghee.</p>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -413,26 +269,36 @@
   <!-- 7. IMAGE GALLERY -->
   <section id="gallery" class="py-5">
     <div class="container">
+
       <h2 class="section-title text-center">Image Gallery</h2>
+
       <div class="row g-3">
+
         <div class="col-md-4 col-sm-6">
           <img src="https://images.unsplash.com/photo-1620766182966-c6eb5ed2b788?q=80&w=600&auto=format&fit=crop" class="w-100 gallery-img" onclick="openLightbox(this.src)" alt="Hampi">
         </div>
+
         <div class="col-md-4 col-sm-6">
           <img src="https://media.tripinvites.com/places/mysore/mysore-palace/mysore-palace-in-lights-featured.jpg" class="w-100 gallery-img" onclick="openLightbox(this.src)" alt="Mysuru Palace">
         </div>
+
         <div class="col-md-4 col-sm-6">
           <img src="https://images.unsplash.com/photo-1546587348-d12660c30c50?q=80&w=600&auto=format&fit=crop" class="w-100 gallery-img" onclick="openLightbox(this.src)" alt="Jog Falls">
         </div>
+
       </div>
     </div>
   </section>
 
   <!-- 8. TRAVEL INFORMATION & CALCULATOR -->
   <section id="travel" class="py-5 text-white" style="background-color: #26211d;">
+
     <div class="container">
+
       <h2 class="section-title text-center text-white">Travel Information</h2>
+
       <div class="row g-4 mb-5">
+
         <div class="col-md-4">
           <div class="d-flex align-items-start gap-3">
             <i class="fa-solid fa-plane fs-3 text-warning"></i>
@@ -462,12 +328,19 @@
             </div>
           </div>
         </div>
+
       </div>
 
       <!-- Distance Calculator -->
       <div class="bg-dark p-4 rounded-3 border border-secondary">
-        <h5 class="text-warning mb-3"><i class="fa-solid fa-calculator me-2"></i>Quick Distance Calculator from Bengaluru</h5>
+
+        <h5 class="text-warning mb-3">
+          <i class="fa-solid fa-calculator me-2"></i>
+          Quick Distance Calculator from Bengaluru
+        </h5>
+
         <div class="row g-3 align-items-center">
+
           <div class="col-md-6">
             <select id="destinationSelect" class="form-select bg-dark text-white border-secondary">
               <option value="150">Mysuru (150 km)</option>
@@ -476,12 +349,17 @@
               <option value="400">Gokarna (400 km)</option>
             </select>
           </div>
+
           <div class="col-md-6">
-            <button class="btn btn-warning fw-bold w-100" onclick="calculateTravelTime()">Calculate Distance & Time</button>
+            <button class="btn btn-warning fw-bold w-100" onclick="calculateTravelTime()">
+              Calculate Distance & Time
+            </button>
           </div>
+
           <div class="col-12 mt-3">
             <div id="travelResult" class="p-3 bg-secondary rounded text-white small" style="display:none;"></div>
           </div>
+
         </div>
       </div>
 
@@ -491,29 +369,43 @@
   <!-- FOOTER -->
   <footer class="py-4 text-center">
     <div class="container">
-      <p class="mb-0 text-muted">&copy; 2026 Explore Karnataka Project. Designed with HTML, CSS & Bootstrap.</p>
+      <p class="mb-0 text-muted">
+        &copy; 2026 Explore Karnataka Project. Designed with HTML, CSS & Bootstrap.
+      </p>
     </div>
   </footer>
 
   <!-- Modal for Place Quick View -->
   <div class="modal fade" id="infoModal" tabindex="-1">
+
     <div class="modal-dialog modal-dialog-centered">
+
       <div class="modal-content">
+
         <div class="modal-header">
           <h5 class="modal-title fw-bold" id="modalTitle">Destination Detail</h5>
+
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
+
         <div class="modal-body" id="modalBody"></div>
+
       </div>
+
     </div>
   </div>
 
   <!-- Modal for Lightbox Gallery -->
   <div class="modal fade" id="lightboxModal" tabindex="-1">
+
     <div class="modal-dialog modal-dialog-centered modal-lg">
+
       <div class="modal-content bg-transparent border-0 text-center">
+
         <img id="lightboxImg" src="" class="img-fluid rounded">
+
       </div>
+
     </div>
   </div>
 
@@ -528,6 +420,7 @@
       
       items.forEach(item => {
         let text = item.innerText.toLowerCase();
+
         if (text.includes(input)) {
           item.style.display = "";
         } else {
@@ -545,11 +438,13 @@
       event.target.classList.add('active');
 
       items.forEach(item => {
+
         if (category === 'all' || item.getAttribute('data-category') === category) {
           item.style.display = "";
         } else {
           item.style.display = "none";
         }
+
       });
     }
 
@@ -557,6 +452,7 @@
     function showModal(title, text) {
       document.getElementById('modalTitle').innerText = title;
       document.getElementById('modalBody').innerText = text;
+
       let modal = new bootstrap.Modal(document.getElementById('infoModal'));
       modal.show();
     }
@@ -564,6 +460,7 @@
     // Image Lightbox
     function openLightbox(src) {
       document.getElementById('lightboxImg').src = src;
+
       let modal = new bootstrap.Modal(document.getElementById('lightboxModal'));
       modal.show();
     }
@@ -571,15 +468,19 @@
     // Travel Time Calculator
     function calculateTravelTime() {
       let distance = parseInt(document.getElementById('destinationSelect').value);
+
       let driveHours = (distance / 60).toFixed(1);
       let trainHours = (distance / 50).toFixed(1);
 
       let resultDiv = document.getElementById('travelResult');
+
       resultDiv.style.display = "block";
+
       resultDiv.innerHTML = `<strong>Distance:</strong> ${distance} km<br>
                              <strong>Estimated Driving Time:</strong> ~${driveHours} hrs<br>
                              <strong>Estimated Train Time:</strong> ~${trainHours} hrs`;
     }
   </script>
+
 </body>
 </html>
